@@ -73,6 +73,9 @@ class Lecture(Person):  # Task 3
     def get_attributes(self):
         pass
 
+    def __add__(self, s):
+        self.assign_students(s)
+
 def exercise_1(inputs): # DO NOT CHANGE THIS LINE
     """
     This functions receives the input in the parameter 'inputs'. 
@@ -114,12 +117,6 @@ def exercise_1(inputs): # DO NOT CHANGE THIS LINE
 #           "Lecturer:", lecturer_dic[le_name].lecturer,
 #           "Students:", lecturer_dic[le_name].students)
 
-    output = {
-        1: [Person],
-        2: [Teacher, Student, student_id_dic, teacher_id_dic],
-        3: [Lecture, lecturer_dic],
-        4: [Lecture, lecturer_dic],
-        6: [Teacher, Student, student_id_dic, teacher_id_dic],
-    }  # Sorry I tried my best but I don't really understand how to write task 5
+    output = [Person, Teacher, Student, Lecture]  # Sorry I tried my best but I don't really understand how to write task 5
 
     return output       # DO NOT CHANGE THIS LINE
