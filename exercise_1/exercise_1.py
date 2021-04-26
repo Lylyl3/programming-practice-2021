@@ -1,3 +1,4 @@
+ exercises
 from abc import ABC, abstractmethod
 
 teacher_list = ['Lee', 'Liu', 'Wang']
@@ -76,10 +77,13 @@ class Lecture(Person):  # Task 3
     def __add__(self, s):
         self.assign_students(s)
 
+
+submissions
 def exercise_1(inputs): # DO NOT CHANGE THIS LINE
     """
     This functions receives the input in the parameter 'inputs'. 
     Change the code, so that the output is sqaure of the given input.
+exercises
     """
     student_id_dic = {}  # empty dictionary for students
     for num in range(0, len(student_list)):
@@ -118,5 +122,31 @@ def exercise_1(inputs): # DO NOT CHANGE THIS LINE
 #           "Students:", lecturer_dic[le_name].students)
 
     output = [Person, Teacher, Student, Lecture]  # Sorry I tried my best but I don't really understand how to write task 5
+
+    
+    p, q, r = inputs
+    
+    p => ['t101', 't102', 't103']
+    q => ['s101', 's102', 's103']
+    r => {
+        'l101':['t101': ['s101', 's102']], 
+        'l102': ['s101', 's102', 's103']]
+    }
+    p = Person()
+    s = Student()
+    t = Teacher()
+    l = Lecture()
+    
+    output = {
+        1: [Person, p], 
+        2: [Teacher, Student, t, s], 
+        3: [Lecture, l], 
+        4: [Lecture, l], 
+        5: [Lecture, Student, l, s], 
+        6: [Teacher, Student, t, s]
+    }
+    """
+    output = inputs
+submissions
 
     return output       # DO NOT CHANGE THIS LINE
